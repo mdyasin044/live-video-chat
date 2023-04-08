@@ -4,7 +4,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://rainbow-semifreddo-353473.netlify.app",
+		origin: "https://live-video-chat-frontend.onrender.com",
 		methods: [ "GET", "POST" ]
 	}
 })
