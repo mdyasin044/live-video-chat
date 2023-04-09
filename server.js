@@ -4,7 +4,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://live-video-chat-frontend.onrender.com",
+		origin: ["https://live-video-chat-frontend.onrender.com", "https://stalwart-belekoy-629d3a.netlify.app"],
 		methods: [ "GET", "POST" ]
 	}
 })
